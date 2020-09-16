@@ -1,0 +1,162 @@
+:root {
+    --basic-white:#FFFFFF;
+    --basic-black: #000000;
+    --basic-gray: #293449;
+    --basic-green: #63A63E;
+    --basic-red: #EE3643;
+    --grey-2: #C5C5C5;
+    --grey-3: #F9F5F0;
+    --gray-4:#A9A9A9;
+    --gray-5: #EAEAEA;
+    --gray-6: #32425C;
+    --gray-7: #161D29;
+    --gray-8: #1D2739;
+    --gray-9:#B5B5B5;
+    --gray-10:#293449;
+    --basic-background: #F1F5F7;
+    --basic-yellow: #FFBF47;
+    --basic-blue: #3BBCE3;
+    --basic-lilac: #DC91D8;
+    --greenlight: #8ED78F;
+    --yellowlight: #FFD180;
+    --green-dark: #5FBB2D;
+    --green-4: #518534;
+    --lightgrey: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EAEAEA;
+    --middle-red: #CA2C37;
+    --dark-red: #BA2732;
+}
+/* Global */
+
+body {
+    min-width: 940px;
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Cuprum", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .header-top-area{
+    background-color: var(--basic-gray);
+    
+  }
+  .marker-link,
+  .basket-link {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+  }
+  .order-link {
+    background-color: var(--basic-green);
+    color: var(--basic-white);
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .main-header {
+    background: var(--basic-background);
+
+  }
+  .about {
+    font-family: Cuprum;
+    font-style: italic;
+    color: var(--basic-red);
+
+  }
+  .phone-header {
+    font-family: Cuprum;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 30px;
+    align-items: center;
+    color: var(--basic-red);
+  }
+
+  .header-adress {
+    font-family: Cuprum;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--gray-6);
+  }
+  .login-link,
+  .singup-link {
+    font-family: Cuprum;
+    font-style: normal;
+    font-size: 21px;
+    line-height: 21px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+  .main-nav {
+    font-family: Cuprum;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+    background-color: var(--basic-gray);
+  }
+
+  .site-navigation {
+    font-family: Cuprum;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+    color: var(--basic-white);
+  }
+
+  /* Promo */
+  .promo-box-material {
+    background-color: var(--basic-yellow);
+  }
+ .promo-box-tools {
+    background-color: var(--basic-blue);
+ }
+ .promo-box-technic {
+    background-color: var(--basic-lilac);
+ }
+ .promo-box-sale {
+    background-color: var(--greenlight);
+ }
+ .promo-box-del {
+    background-color: var(--basic-yellow);
+ }
+.promo-box-title {
+    font-family: Cuprum;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 30px;
+    color: var(--basic-white);
+
+  }
+ .promo-box-button {
+    font-family: Cuprum;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 18px;
+    list-style: none;
+    color: var(--basic-white);
+}
+.promo-slider-title {
+    font-family: Cuprum;
+    font-style: normal;
+    font-size: 36px;
+    line-height: 36px;
+    color: var(--basic-white)
+}
+.promo-slider-list {
+    list-style: none;
+    color: var(--basic-white);
+}
