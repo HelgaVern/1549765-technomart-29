@@ -13,34 +13,36 @@
       <section class="header-top-area">
         <h2 class="invisible">Информация для пользователя</h2>
          <a class="main-logo" href="#">
-           <img src="https://via.placeholder.com/220x68" height="68" width="220" alt="Логотип">
+           <img src="https://via.placeholder.com/108x18" height="18" width="108" alt="Логотип">
          </a>
-         <input class="search" type="search" placeholder="Поиск">
-         <a class="marker-link" href=""> Закладки:0 </a>
-         <a class="basket-link" href=""> Корзина:0 </a>
+         <form class="header-search-form">
+           <input class="search" type="search" placeholder="Поиск">
+         </form>
+         <a class="header-link" href=""> Закладки:0 </a>
+         <a class="header-link" href=""> Корзина:0 </a>
          <a class="order-link" href=""> Оформить заказ </a>
       </section>
       <section class="header-login-area">
         <h2 class="invisible">Авторизация</h2>
         <p class="about"><i>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</i></p>
-        <div>
+        <div class="contacts-header">
           <a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
           <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         </div>
         <div class="enter">
-            <a class="login-link" href="">Войти</a>
-            <a class="singup-link" href="">Регистрация</a>
+            <a class="enter-link" href="">Войти</a>
+            <a class="enter-link" href="">Регистрация</a>
         </div>
       </section>
       <nav class="main-nav">
         <ul class="site-navigation">
-          <li class="site-navigation-item"><a href="index.html">Главная</a></li>
-          <li class="site-navigation-item"><a href="#company">Компания </a></li>
-          <li class="site-navigation-item"><a href="catalog.html">Каталог</a></li>
-          <li class="site-navigation-item"><a href="">Новости</a></li>
-          <li class="site-navigation-item"><a href="#promo">Спецпредложения</a></li>
-          <li class="site-navigation-item"><a href="#delivery">Доставка</a></li>
-          <li class="site-navigation-item"><a href="#contacts">Контакты</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="index.html">Главная</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link"href="#company">Компания </a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link"href="catalog.html">Каталог</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link"href="">Новости</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link"href="#promo">Спецпредложения</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link"href="#delivery">Доставка</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link"href="#contacts">Контакты</a></li>
         </ul>
       </nav>
    </header>
@@ -73,12 +75,12 @@
            <li class="promo-slider-item" id="perf">
              <h3 class="promo-slider-title">ПЕРФОРАТОРЫ</h3>
              <p class="promo-slider-text">Настоящие мужские игрушки</p>
-             <a class="promo-slider-button" href="catalog.html">Открыть каталог</a>
+             <a class="button" href="catalog.html">Открыть каталог</a>
            </li>
            <li class="promo-slider-item" id="drill">
              <h3 class="promo-slider-title">ДРЕЛИ</h3>
              <p class="promo-slider-text">Соседям на радость</p>
-             <a class="promo-slider-button" href="catalog.html">Открыть каталог</a>
+             <a class="button" href="catalog.html">Открыть каталог</a>
            </li>
          </ul>
           <a href="#perf">Слайд перфораторы</a>
@@ -87,77 +89,77 @@
          <button type="button-slider"><img src="https://via.placeholder.com/40x20" height="40" width="22" alt="лево">Лево</button>
        </div>
      </section>
-     <section class="catalog">
-       <div>
-          <h2 class="title">Популярные товары:</h2>
+     <section class="popular-product">
+       <div class="popular">
+          <h2 class="title-pop">Популярные товары:</h2>
           <a class="button" href="">Все популярные товары</a>
        </div>
        <ul class="product-list">
         <li class="product-item">
           <img src="https://via.placeholder.com/144x128" height="128" width="144" alt="Перфоратор BOSCH BFG 9000">
-          <a clsss="product-link" href="">Перфоратор BOSCH BFG 9000</a>
+          <a class="product-link" href="">Перфоратор BOSCH BFG 9000</a>
           <p class="price-old">32500 Р.</p>
           <p class="price-new">15500 Р.</p>
         </li>
         <li class="product-item">
           <img src="https://via.placeholder.com/144x128" height="128" width="144" alt="Перфоратор BOSCH BFG 3000">
-          <a clsss="product-link" href="">Перфоратор BOSCH BFG 3000</a>
+          <a class="product-link" href="">Перфоратор BOSCH BFG 3000</a>
           <p class="price-old">22500 Р.</p>
           <p class="price-new">15500 Р.</p>
           <p class="new-icon">new</p>
         </li>
         <li class="product-item">
           <img src="https://via.placeholder.com/144x128" height="128" width="144" alt="Перфоратор BOSCH BFG 6000">
-          <a clsss="product-link" href="">Перфоратор BOSCH BFG 6000</a>
+          <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
           <p class="price-old">30500 Р.</p>
           <p class="price-new">25500 Р.</p>
         </li>
         <li class="product-item">
           <img src="https://via.placeholder.com/144x128" height="128" width="144" alt="Перфоратор BOSCH BFG 2000">
-          <a clsss="product-link" href="">Перфоратор BOSCH BFG 2000</a>
-          <p>12500 Р.</p>
+          <a class="product-link" href="">Перфоратор BOSCH BFG 2000</a>
+          <p class="price-new">12500 Р.</p>
           <p class="new-icon">new</p>
         </li>
       </ul>
      </section>
      <section class="popular-maker">
-       <div>
-         <h2 class="title">Популярные производители</h2>
+       <div class="popular">
+         <h2 class="title-pop">Популярные производители</h2>
          <a class="button" href="">Все производители </a>
        </div>
        <ul class="popular-maker-list">
          <li class="popular-maker-item">
-           <a href="">
+           <a class="popular-maker-link" href="">
              <img src="https://via.placeholder.com/200x145" height="145" width="200" alt="bosch">
            </a>
          </li>
          <li class="popular-maker-item">
-           <a href="">
+           <a class="popular-maker-link"  href="">
              <img src="https://via.placeholder.com/200x145" height="145" width="200" alt="Makita">
            </a>
          </li>
          <li class="popular-maker-item">
-           <a href="">
+           <a class="popular-maker-link"  href="">
              <img src="https://via.placeholder.com/200x145" height="145" width="200" alt="DeWALT">
            </a>
          </li>
          <li class="popular-maker-item">
-          <a href="">
+          <a class="popular-maker-link" href="">
             <img src="https://via.placeholder.com/200x145" height="145" width="200" alt="Интерскол">
           </a>
          </li>
          <li class="popular-maker-item">
-          <a href="">
+          <a class="popular-maker-link" href="">
             <img src="https://via.placeholder.com/200x145" height="145" width="200" alt="Hitachi">
           </a>
          </li>
          <li class="popular-maker-item">
-          <a href="">
+          <a class="popular-maker-link" href="">
             <img src="https://via.placeholder.com/200x145" height="145" width="200" alt="LG">
           </a>
          </li>
          <li class="popular-maker-item">
-          <a href="">
+          <a class="popular-maker-link" href="">
             <img src="https://via.placeholder.com/200x145" height="145" width="200" alt="AEG">
           </a>
          </li>
@@ -172,13 +174,13 @@
        <h2 class="title">Сервисы</h2>
        <p class="service-description">Хороший интернет-магазин отличается от плохого не только ценами!<br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
        <ul class="services-list">
-         <li class="services-list-item"><a href="#delivery">Доставка</a></li>
-         <li class="services-list-item"><a href="#guaranty">Гарантия</a></li>
-         <li class="services-list-item"><a href="#credit">Кредит</a></li>
+         <li class="services-list-item"><a class="services-link" href="#delivery">Доставка</a></li>
+         <li class="services-list-item"><a class="services-link" href="#guaranty">Гарантия</a></li>
+         <li class="services-list-item"><a class="services-link" href="#credit">Кредит</a></li>
        </ul>
        <ul class="services-description-list">
          <li class="services-description-item" id="delivery">
-           <h3 class="services-title">Доставка</h3>
+           <h3 class="title-pop">Доставка</h3>
            <p class="description">Мы с удовольствием доставим ваш товар прямо<br> 
             к вашему подъезду совершенно бесплатно!<br>
             Ведь мы неплохо заработаем,<br> 
@@ -186,12 +188,12 @@
            <img src="https://via.placeholder.com/486x261" height="261" width="468" alt="truck">
          </li>
          <li class="services-description-item" id="guaranty">
-           <h3 class="services-title">Гарантия</h3>
+           <h3 class="title-pop">Гарантия</h3>
            <p class="description">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его<br> возгоранием,  вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
            <img src="https://via.placeholder.com/389x283" height="283" width="389" alt="medal">
         </li>
         <li class="services-description-item" id="credit">
-           <h3 class="services-title">Кредит</h3>
+           <h3 class="title-pop">Кредит</h3>
            <p class="description">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на помощь.</p>
            <a class="button" href="">Отправить заявку</a>
            <img src="https://via.placeholder.com/465x285" height="285" width="465" alt="money">
@@ -224,22 +226,22 @@
         </a>
         <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="phone-footer" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
         <ul class="footer-main-nav">
-          <li><a href="">Компания</a></li>
-          <li><a href="">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="">Доставка</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a class="footer-nav-link" href="">Компания</a></li>
+          <li><a class="footer-nav-link" href="">Новости</a></li>
+          <li><a class="footer-nav-link" href="catalog.html">Каталог</a></li>
+          <li><a class="footer-nav-link" href="">Доставка</a></li>
+          <li><a class="footer-nav-link" href="">Контакты</a></li>
         </ul>
         <ul class="footer-add-nav">
-          <li><a href="">Материалы</a></li>
-          <li><a href="">Техника</a></li>
-          <li><a href="">Инструмент</a></li>
-          <li><a href="">Спецпредложения</a></li>
+          <li><a class="footer-add-link" href="">Материалы</a></li>
+          <li><a class="footer-add-link" href="">Техника</a></li>
+          <li><a class="footer-add-link" href="">Инструмент</a></li>
+          <li><a class="footer-add-link" href="">Спецпредложения</a></li>
         </ul>
       </section>
       <section class="footer-contacts">
         <h2 class="invisible">Обратная связь</h2>
-        <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
+        <p class="footer-copyright"> © 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
         <ul class="footer-social">
           <li>
             <a class="social-button" href="">Вконтакте</a>
@@ -251,9 +253,9 @@
             <a class="social-button" href="">Инстаграм</a>
           </li>
         </ul>
-        <p>Обратная связь:<br>mail@htmlacademy.ru</p>
+        <p class="mail">Обратная связь:<br><a class="contacts" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
         <p class="footer-copyright">Разработано:
-          <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
+          <a class="contacts" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
       </section>
    </footer>
   </body>
