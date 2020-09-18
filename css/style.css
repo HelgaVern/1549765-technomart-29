@@ -30,7 +30,10 @@
 
     --shadow-1: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 
-    --transparent-grey-1:  rgba(255, 255, 255, 0.5);
+    --transparent-gray-1:  rgba(255, 255, 255, 0.5);
+    --transparent-gray-2: rgba(255, 255, 255, 0.3);
+    --transparent-gray-3: rgba(197,197,197,1);
+    --transparent-gray-4: rgba(0, 0, 0, 0.15);
 
 }   
 /* Global */
@@ -83,10 +86,6 @@ body {
     color: var(--basic-black);
     background-color: var(--basic-white);
   }
-  .search:hover {
-    color: var(--basic-black);
-    background-color: var(--basic-white);
-  }
 
   .search::placeholder   {
     font-family: Cuprum;
@@ -98,10 +97,6 @@ body {
   }
 
   .search:focus::placeholder {
-    color: var(--basic-black);
-    background-color: var(--basic-white);
-  }
-  .search:hover::placeholder {
     color: var(--basic-black);
     background-color: var(--basic-white);
   }
@@ -239,13 +234,14 @@ body {
     font-size: 14px;
     line-height: 18px;
     color: var(--basic-white);
-    background-color: rgba(255,255,255,0.3);
+    background-color: var(--transparent-gray-2);
 }
 .promo-box-button:hover {
-  background-color: rgba(197,197,197,1);
+  background-color: var(--transparent-gray-3);
 }
 .promo-box-button:active {
-  background-color: rgba(169, 169, 169, 1);
+  opacity: 0.3;
+  background-color: var(--gray-4);
 }
 .promo-slider-title {
     font-family: Cuprum;
@@ -328,14 +324,14 @@ body {
 
 .popular-maker-item {
   background-color: var(--basic-white);
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--gray-11);
 }
 .popular-maker-link:hover {
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 20px var(--transparent-gray-4));
 } 
 .popular-maker-link:active {
   opacity: 0.5;
-  filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 4px 20px var(--transparent-gray-4));
 }
 
 /* Services */
