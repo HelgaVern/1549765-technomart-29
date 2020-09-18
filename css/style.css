@@ -27,7 +27,12 @@
     --middle-red: #CA2C37;
     --dark-red: #BA2732;
     --slider-color: #A79D8E;
-}
+
+    --shadow-1: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+
+    --transparent-grey-1:  rgba(255, 255, 255, 0.5);
+
+}   
 /* Global */
 
 body {
@@ -59,13 +64,13 @@ body {
   }
   .main-logo {
     background-color: var(--basic-red);
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);  
+    box-shadow: var(--shadow-1);  
   }
   .main-logo:active {
     background-color: var(--dark-red);
-    box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
+    box-shadow: var(--shadow-1);  
   }
-  .search::-webkit-input-placeholder {
+  .search  {
     font-family: Cuprum;
     font-size: 18px;
     line-height: 24px;
@@ -73,14 +78,7 @@ body {
     background-color: var(--basic-gray);
     align-items: center;
   }
-  .search   {
-    font-family: Cuprum;
-    font-size: 18px;
-    line-height: 24px;
-    color: var(--basic-white);
-    background-color: var(--basic-gray);
-    align-items: center;
-  }
+
   .search:focus {
     color: var(--basic-black);
     background-color: var(--basic-white);
@@ -89,9 +87,28 @@ body {
     color: var(--basic-black);
     background-color: var(--basic-white);
   }
+
+  .search::placeholder   {
+    font-family: Cuprum;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--basic-white);
+    background-color: var(--basic-gray);
+    align-items: center;
+  }
+
+  .search:focus::placeholder {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+  .search:hover::placeholder {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+  }
+
   .header-link:active {
     background-color: var(--gray-7);
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--transparent-grey-1);
   }
   .header-link{
     font-family: Cuprum;
@@ -103,7 +120,7 @@ body {
   }
   .order-link:active {
     background-color:var(--basic-green);
-    color:rgba(255, 255, 255, 0.5);
+    color: var(--transparent-grey-1);
   }
   .order-link:hover {
     background-color: var(--green-dark);
@@ -266,7 +283,7 @@ body {
 
 .product-item {
   background-color: var(--basic-white);
-  border: 1px solid #EAEAEA;
+  border: 1px solid var(--gray-5);
 }
 .product-link {
   font-family: PT Sans;
@@ -375,7 +392,7 @@ body {
 }
 .services-link:active {
   background-color: var(--basic-white);
-  box-shadow: 0px 1px 0px #FFFFFF, inset 0px 1px 0px #FFFFFF;
+  box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
   color: var(--gray-6);
 }
 .transport-item {
