@@ -70,42 +70,44 @@ body {
     background-color: var(--basic-red);
     box-shadow: var(--shadow-1);  
   }
+
   .main-logo:active {
     background-color: var(--dark-red);
     box-shadow: var(--shadow-1);  
   }
+
   .search  {
     font-family: Cuprum;
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
     background-color: var(--basic-gray);
-    align-items: center;
   }
-  .search::-webkit-input-placeholder   {
+
+  .search::-webkit-input-placeholder {
     font-family: Cuprum;
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
     background-color: var(--basic-gray);
-    align-items: center;
   }
-  .search:focus::-webkit-input-placeholder   {
+
+  .search:focus::-webkit-input-placeholder {
     color: var(--basic-black);
     background-color: var(--basic-white);
   }
+
   .search:focus {
     color: var(--basic-black);
     background-color: var(--basic-white);
   }
 
-  .search::placeholder   {
+  .search::placeholder {
     font-family: Cuprum;
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
     background-color: var(--basic-gray);
-    align-items: center;
   }
 
   .search:focus::placeholder {
@@ -115,47 +117,51 @@ body {
 
   .header-link:active {
     background-color: var(--gray-7);
-    color: var(--transparent-grey-1);
+    color: var(--basic-white) 50%;
   }
-  .header-link{
+  
+  .header-link {
     font-family: Cuprum;
     font-size: 18px;
     line-height: 24px;
     color: var(--basic-white);
     background-color: var(--basic-gray);
-    align-items: center;
   }
+
   .order-link:active {
     background-color:var(--basic-green);
     color: var(--transparent-grey-1);
   }
+
   .order-link:hover {
     background-color: var(--green-dark);
   }
+
   .order-link {
     background-color: var(--basic-green);
     color: var(--basic-white);
     font-size: 18px;
     line-height: 24px;
-    align-items: center;
   }
+
   .main-header {
     background: var(--basic-background);
-
   }
+
   .about {
     font-family: Cuprum;
     font-style: italic;
     font-size: 16px;
     line-height: 23px;
     color: var(--basic-red);
-
   }
+
   .contacts-header {
     background-color: var(--gray-12);
     border: 3px solid var(--basic-white);
     box-sizing: border-box;
   }
+
   .phone-header {
     font-family: Cuprum;
     font-weight: bold;
@@ -172,6 +178,7 @@ body {
     line-height: 24px;
     color: var(--gray-6);
   }
+
   .enter-link{
     font-family: Cuprum;
     font-style: normal;
@@ -181,14 +188,17 @@ body {
     background-color: var(--basic-white);
     text-align: center;
   }
+
   .enter-link:hover {
     background-color: var(--basic-white);
     color: var(--basic-red);
   }
-  .enyer-link:active {
+
+  .enter-link:active {
     background-color: rgba(0, 0, 0, 0.0001);
     color: var(--gray-2);
   }
+
   .main-nav {
     font-family: Cuprum;
     font-style: normal;
@@ -197,6 +207,7 @@ body {
     color: var(--basic-white);
     background-color: var(--gray-6);
   }
+
   .site-navigation {
     font-family: Cuprum;
     font-style: normal;
@@ -205,7 +216,8 @@ body {
     list-style: none;
     color: var(--basic-white);
   }
-  .site-navigation-item:hover{
+
+  .site-navigation-item:hover {
     background-color: var(--basic-gray);
     color: var(--basic-white);
     opacity: 0.5;
@@ -214,32 +226,47 @@ body {
     color: var(--basic-white);
   }
 
+  .site-navigation-link:hover {
+    background-color: var(--basic-gray);
+    color: var(--basic-white);
+  }
+
+  .site-navigation-link:active {
+    background-color: var(--basic-gray);
+    color: var(--basic-white) 50%;
+  }
+
 
   /* Promo */
 
   .promo-box-material {
     background-color: var(--basic-yellow);
   }
+
  .promo-box-tools {
     background-color: var(--basic-blue);
  }
+
  .promo-box-technic {
     background-color: var(--basic-lilac);
  }
+
  .promo-box-sale {
     background-color: var(--greenlight);
  }
+
  .promo-box-del {
     background-color: var(--basic-yellow);
  }
+
 .promo-box-title {
     font-family: Cuprum;
     font-style: normal;
     font-size: 24px;
     line-height: 30px;
     color: var(--basic-white);
-
   }
+
  .promo-box-button {
     font-family: Cuprum;
     font-style: normal;
@@ -248,13 +275,16 @@ body {
     color: var(--basic-white);
     background-color: var(--transparent-gray-2);
 }
+
 .promo-box-button:hover {
   background-color: var(--transparent-gray-3);
 }
+
 .promo-box-button:active {
   opacity: 0.3;
   background-color: var(--gray-4);
 }
+
 .promo-slider-title {
     font-family: Cuprum;
     font-style: normal;
@@ -263,13 +293,16 @@ body {
     color: var(--basic-white);
     text-transform: uppercase;
 }
+
 .promo-slider-list {
     list-style: none;
     color: var(--basic-white);
 }
+
 .promo-slider-item {
   background-color: var(--slider-color);
 }
+
 .button {
   font-family: Cuprum;
   font-size: 14px;
@@ -277,12 +310,15 @@ body {
   color: var(--basic-white);
   background-color: var(--basic-red);;
 }
+
 .button:hover {
   background-color: var(--middle-red);
 }
+
 .button:active {
-  background-color: (var(--dark-red));
+  background-color: var(--dark-red);
 }
+
 .popular {
   background-color: var(--gray-3);
   color: var(--gray-6);
@@ -293,6 +329,7 @@ body {
   background-color: var(--basic-white);
   border: 1px solid var(--gray-5);
 }
+
 .product-link {
   font-family: PT Sans;
   font-style: normal;
@@ -302,6 +339,7 @@ body {
   color: var(--basic-black);
   text-align: center;
 }
+
 .price-old {
   font-family: PT Sans;
   font-weight: bold;
@@ -312,6 +350,7 @@ body {
   color: var(--gray-4);
   text-align: center;
 }
+
 .price-new {
   background-color: var(--basic-red);
   font-family: PT Sans;
@@ -338,9 +377,11 @@ body {
   background-color: var(--basic-white);
   border: 1px solid var(--gray-11);
 }
+
 .popular-maker-link:hover {
   filter: drop-shadow(0px 4px 20px var(--transparent-gray-4));
 } 
+
 .popular-maker-link:active {
   opacity: 0.5;
   filter: drop-shadow(0px 4px 20px var(--transparent-gray-4));
@@ -359,6 +400,7 @@ body {
   color: var(--basic-black);
   text-transform: uppercase;
 }
+
 .title-pop {
   font-family: Cuprum;
   font-style: normal;
@@ -367,22 +409,17 @@ body {
   color: var(--gray-6);
   text-transform: uppercase;
 }
+
 .description {
   font-family: PT Sans;
   font-size: 13px;
   line-height: 24px; 
   color: var(--basic-black);
 }
-.services-list,
- .services-description-list,
- .transport-item, 
- .footer-main-nav,
- .footer-add-nav,
- .footer-social,
- .product-list,
-.popular-maker-list {
+.item-list {
   list-style: none;
 }
+
 .services-link {
   font-family: Cuprum;
   font-style: normal;
@@ -393,16 +430,19 @@ body {
   background-color: var(--gray-6);
   box-shadow: 0px 1px 0px var(--basic-gray), inset 0px 1px 0px var(--gray-13);
 }
+
 .services-link:hover {
   background-color: var(--gray-10);
   box-shadow: 0px 1px 0px var(--basic-gray), inset 0px 1px 0px var(--gray-13);
   color: var(--basic-white);
 }
+
 .services-link:active {
   background-color: var(--basic-white);
   box-shadow: 0px 1px 0px var(--basic-white), inset 0px 1px 0px var(--basic-white);
   color: var(--gray-6);
 }
+
 .transport-item {
   font-family: Cuprum;
   font-style: normal;
@@ -425,6 +465,7 @@ body {
   line-height: 24px;
   color: var(--gray-12);
 }
+
 .footer-nav-link,
 .footer-add-link {
   font-family: Cuprum;
@@ -433,6 +474,7 @@ body {
   line-height: 24px;
   color: var(--basic-background);
 }
+
 .footer-add-link {
   color: var(--yellowlight)
 }
@@ -440,40 +482,43 @@ body {
 .footer-add-link:hover {
   text-decoration-line: underline;
 }
+
 .footer-nav-link:active,
-.footer-add-link:active{
+.footer-add-link:active {
   opacity: 0.5;
 }
+
 .footer-contacts {
   background-color: var(--gray-10);
   color: var(--basic-white);
 }
-.footer-copyright, 
-.mail,
-.footer-social,
-.footer-copyright {
+
+.footer-information {
   font-family: Cuprum;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
 }
+
 .social-button {
   font-family: Cuprum;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
   color: var(--basic-white);
-  
 }
+
 .contacts {
   font-family: Cuprum;
   font-size: 16px;
   line-height: 18px;
   color: var(--yellowlight);
 }
+
 .contacts:hover {
   text-decoration-line: underline;
 }
+
 .contacts:active {
   color: var(--basic-red);
 }
