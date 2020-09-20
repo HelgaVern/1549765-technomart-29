@@ -16,6 +16,8 @@
   --gray-11: #EAEAEA;
   --gray-12: #F3F7F9;
   --gray-13: #405069;
+  --gray-14: #F7F3EC;
+  --gray-15: #F2F6F8;
   --basic-background: #F1F5F7;
   --basic-yellow: #FFBF47;
   --basic-blue: #3BBCE3;  --basic-lilac: #DC91D8;
@@ -526,4 +528,92 @@ img {
 
 .contacts:active {
   color: var(--basic-red);
+}
+
+/*
+  Каталог
+*/
+.sort,
+.sort-link {
+  font-family: PT Sans;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--gray-14);
+}
+.sort-link {
+  opacity: 0.3;
+}
+
+.sort-link:hover {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.sort-link:active {
+  color: var(--basic-red)
+}
+
+.breadcrumbs {
+  font-family: PT Sans;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.title-pop-catalog {
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--gray-6);
+  text-transform: uppercase;
+  background-color: var(--gray-15);
+}
+
+.pages {
+  font-family: PT Sans;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  border: 1px solid #E5E5E5;
+}
+
+.pages:hover {
+  border: 1px solid #C5C5C5;
+}
+
+.pages:focus {
+  border: 1px solid var(--basic-red);
+}
+
+.pages:active {
+  background-color: var(--basic-red);
+  color: var(--basic-white)
+}
+
+.personal {
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--gray-6);
+}
+
+.personal:hover {
+  color: var(--basic-red)
+}
+
+.personal:focus {
+  color: var(--gray-2);
+}
+
+.name:hover {
+  color: var(--basic-black);
 }
