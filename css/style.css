@@ -18,6 +18,7 @@
   --gray-13: #405069;
   --gray-14: #F7F3EC;
   --gray-15: #F2F6F8;
+  --gray-16: #E5E5E5;
   --basic-background: #F1F5F7;
   --basic-yellow: #FFBF47;
   --basic-blue: #3BBCE3;  --basic-lilac: #DC91D8;
@@ -25,6 +26,7 @@
   --yellowlight: #FFD180;
   --green-dark: #5FBB2D;
   --green-4: #518534;
+  --green-5: #367315;
   --lightgrey: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #EAEAEA;
   --middle-red: #CA2C37;
   --dark-red: #BA2732;
@@ -61,6 +63,10 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.invisible {
+  /* display: none; */
 }
 
 /* header */
@@ -541,18 +547,22 @@ img {
   line-height: 18px;
   color: var(--basic-black);
   background-color: var(--gray-14);
+  text-transform: uppercase;
 }
+
 .sort-link {
   opacity: 0.3;
+  border-bottom: 1px dashed var(--basic-red);
 }
 
 .sort-link:hover {
   color: var(--basic-black);
   opacity: 1;
+  border-bottom: 1px solid var(--basic-red);
 }
 
-.sort-link:active {
-  color: var(--basic-red)
+.use {
+  color: var(--basic-red);
 }
 
 .breadcrumbs {
@@ -575,25 +585,79 @@ img {
   background-color: var(--gray-15);
 }
 
+.button-catalog-buy {
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-green);
+  color: var(--basic-white);
+  box-shadow: inset 0px -3px 0px var(--green-5);
+  border-radius: 2px;
+}
+
+.button-catalog-buy:hover {
+  background-color: var(--green-dark);
+  box-shadow: inset 0px -3px 0px var(--green-5);
+  border-radius: 2px;
+}
+
+.button-catalog-buy:active {
+  background-color: var(--green-4);
+  box-shadow: inset 0px -3px 0px var(--green-5);
+  border-radius: 2px;
+}
+
+.button-catalog-tab {
+  color: var(--gray-6);
+  font-family: Cuprum;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 3px solid var(--basic-green);
+  background-color: var(--basic-white);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.button-catalog-tab:hover {
+  border: 3px solid var(--gray-6);
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.button-catalog-tab:active {
+  opacity: 0.5;
+}
+
 .pages {
   font-family: PT Sans;
   font-style: normal;
   font-size: 13px;
   line-height: 18px;
+  padding: 15px 10px;
+  /* padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;  так лучше но все равно не то
+  */
+  text-align: center;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  border: 1px solid #E5E5E5;
+  border: 1px solid var(--gray-16);
 }
 
 .pages:hover {
-  border: 1px solid #C5C5C5;
+  border: 1px solid var(--gray-2);
 }
 
 .pages:focus {
   border: 1px solid var(--basic-red);
 }
 
-.pages:active {
+.active {
   background-color: var(--basic-red);
   color: var(--basic-white)
 }
