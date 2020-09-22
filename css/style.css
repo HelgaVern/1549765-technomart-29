@@ -637,12 +637,7 @@ img {
   font-style: normal;
   font-size: 13px;
   line-height: 18px;
-  padding: 15px 10px;
-  /* padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px;  так лучше но все равно не то
-  */
+  padding: 10px 15px;
   text-align: center;
   color: var(--basic-black);
   background-color: var(--basic-white);
