@@ -65,14 +65,129 @@ img {
   height: auto;
 }
 
+/* Гриды */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.promo {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 60px;
+}
+
+.promo .promo-slider {
+  grid-column: 1/3;
+  grid-row: 2/4;
+}
+
+.popular-container {
+  display: grid;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 70px;
+}
+
+.services-container {
+  background-color: var(--basic-background);
+  margin-bottom: 70px;
+}
+
+.popular-container .item-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.index-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 70px;
+}
+
+.main-footer {
+  display: grid;
+  background-color: var(--gray-6);
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.footer-contacts {
+  background-color: var(--basic-gray);
+}
+
+.footer-inf {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.services-item-list  {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  width: 940px;
+}
+
+.site-navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-self: center;
+}
+
+.footer-item-list .item-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+}
+
 .invisible {
   /* display: none; */
 }
 
 /* header */
+.header-top-area-bar {
+  background-color: var(--basic-gray);
+}
+
+.header-login-area {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
 .header-top-area {
+  display: grid;
+  grid-template-columns: 235px 235px 1fr 1fr 1fr;
   background-color: var(--basic-gray);
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .main-logo {
@@ -154,7 +269,9 @@ img {
 }
 
 .main-header {
+  display: grid;
   background: var(--basic-background);
+  margin-bottom: 120px;
 }
 
 .about {
@@ -167,8 +284,8 @@ img {
 
 .contacts-header {
   background-color: var(--gray-12);
-  border: 3px solid var(--basic-white);
   box-sizing: border-box;
+  justify-self: center;
 }
 
 .phone-header {
@@ -177,6 +294,7 @@ img {
   font-size: 21px;
   line-height: 30px;
   color: var(--basic-red);
+  border: 3px solid var(--basic-white);
 }
 
 .header-adress {
@@ -208,6 +326,11 @@ img {
 }
 
 .main-nav {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
   font-family: Cuprum;
   font-style: normal;
   font-size: 18px;
@@ -399,7 +522,11 @@ img {
 /* Services */
 
 .services {
+  display: grid;
+  width: 940px;
   background-color: var(--basic-background);
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .title {
