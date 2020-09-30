@@ -79,9 +79,8 @@ img {
 }
 
 .main-header {
-  display: grid;
   background: var(--basic-background);
-  margin-bottom: 60px;
+  margin-bottom: 0px;
   height: 320px;
 }
 
@@ -91,9 +90,8 @@ img {
   grid-template-rows: repeat(3, 123px);
   grid-gap: 20px;
   width: 940px;
-  margin: 0 auto;
+  margin: 60px auto;
   padding: 0 10px;
-  margin-bottom: 60px;
 }
 
 .promo-slider {
@@ -110,7 +108,6 @@ img {
 }
 
 .main-footer {
-  display: grid;
   background-color: var(--gray-6);
   color: var(--basic-white);
 }
@@ -122,7 +119,6 @@ img {
 
 .breadcrumbs-list {
   display: flex;
-  justify-content: flex-start;
   margin-bottom: 20px;
   line-height: 18px;
   margin-left: 0px;
@@ -136,7 +132,6 @@ img {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
-  margin-top: -59px;
 }
 
 .wrapper .sort {
@@ -237,7 +232,6 @@ img {
 .services-list-item {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   width: 240px;
   height: 61px;
   color: var(--basic-white);
@@ -249,20 +243,28 @@ img {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  align-items: center;
   padding-left: 20px;
 }
 
 .site-navigation {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 100%;
   padding: 0px;
+  margin: 0px;
   font-family: Cuprum;
   font-style: normal;
   font-size: 18px;
   line-height: 24px;
   list-style: none;
   color: var(--basic-white);
+}
+
+li.site-navigation-item {
+  display: flex;
+  height: 100%;
+  align-items: center;
 }
 
 .footer-item-list .item-list {
@@ -295,7 +297,7 @@ img {
 }
 
 .product-item-catalog:nth-child(3n) {
-  margin-right: -20px;
+  margin-right: 0px;
 }
 
 .header-login-area {
@@ -435,7 +437,6 @@ img {
   margin-bottom: 20px;
   background-color: var(--basic-white);
   border: 1px solid var(--gray-11);
-  align-items: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -531,6 +532,7 @@ img {
 
 .enter-link {
   display: inline-block;
+  vertical-align: baseline;
   padding: 12px 24px;
   font-family: Cuprum;
   font-style: normal;
@@ -727,10 +729,6 @@ img {
   padding: 0 10px;
 }
 
-.company {
-  padding: 0px;
-}
-
 .title {
   font-family: Cuprum;
   font-style: normal;
@@ -763,7 +761,6 @@ img {
 
 .item-list-pages {
   display: flex;
-  justify-content: flex-start;
   padding-left: 0px;
 }
 
