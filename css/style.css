@@ -37,7 +37,7 @@
 
   --transparent-gray-1:  rgba(255, 255, 255, 0.5);
   --transparent-gray-2: rgba(255, 255, 255, 0.3);
-  --transparent-gray-3: rgba(197,197,197,1);
+  --transparent-gray-3: rgba(197,197,197, 0.3);
   --transparent-gray-4: rgba(0, 0, 0, 0.15);
 
 }   
@@ -248,15 +248,27 @@ img {
 .item-list .services-description-item:first-child {
   background-image: url("../img/Доставка.png");
   background-repeat: no-repeat;
-  background-position: 140px 30px;
+  background-position: 140px 80px;
+  
 }
 
 .item-list .services-description-item:nth-child(2) {
-  background-image: url("../img/Кредит.png");
+  background-image: url("../img/Гарантия.png");
   background-repeat: no-repeat;
-  background-position: 140px 30px;
+  background-position: 210px 50px;
+  display: none;
 }
 
+.item-list .services-description-item:nth-child(3) {
+  background-image: url("../img/Кредит.png");
+  background-repeat: no-repeat;
+  background-position: 150px 50px;
+  display: none;
+}
+
+.services-description-item:nth-child(3) .button {
+  width: 192px;
+}
 
 
 .services-description-item {
@@ -393,11 +405,12 @@ img {
   box-shadow: var(--shadow-1);  
 }
 
-.header-search-form{
+.header-search-form {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-basis: auto;
+  position: relative;
 }
 
 .header-link:active {
@@ -410,7 +423,8 @@ img {
   align-items: center;
   justify-content: center;
   position: relative;
-  padding-left: 25px;
+  width: 150px;
+  height: 42px;
   font-family: Cuprum;
   font-size: 18px;
   line-height: 24px;
@@ -459,7 +473,7 @@ img {
   opacity: 0.3;
 }
 
-.mark::before:hover {
+.mark:hover::before {
   content: "";
   position: absolute;
   top: 13px;
@@ -472,7 +486,7 @@ img {
   opacity: 1;
 }
 
-.basket::before:hover {
+.basket:hover::before {
   content: "";
   position: absolute;
   top: 12px;
@@ -557,6 +571,15 @@ img {
   border: 1px solid var(--gray-5);
 }
 
+.product-img {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 184px;
+  height: 164px;
+}
+
 .product-item:nth-child(4n) {
   margin-right: 0px;
 }
@@ -619,17 +642,6 @@ img {
   line-height: 24px;
   color: var(--basic-white);
   background-color: var(--basic-gray);
-}
-
-.search::placeholder::before {
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 16px;
-  background-image: url("../img/icon-search-white.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  opacity: 0.3;
 }
 
 .search:focus::placeholder {
@@ -700,6 +712,7 @@ img {
   vertical-align: baseline;
   padding: 12px 24px;
   margin-left: 10px;
+  height: 45px;
   font-family: Cuprum;
   font-style: normal;
   font-size: 21px;
@@ -714,7 +727,7 @@ img {
   padding-left: 47px;
 }
 
-.enter::before {
+/*.enter::before {
   content: "";
   position: absolute;
   width: 20px;
@@ -724,7 +737,7 @@ img {
   background-position: 0 0;
   top: 14px;
   left: 19px;
-}
+} */
 
 .enter-link:hover {
   background-color: var(--basic-white);
@@ -791,6 +804,16 @@ img {
   background-image: url("../img/Материалы.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
+}
+
+.promo-box-material .promo-box-button::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  bottom: 53px;
+  left: 223px;
+  background-image: url("../img/Каталог\ new.png");
 }
 
 .promo-box-tools {
@@ -1071,6 +1094,7 @@ img {
 
 .services-description-item .title-pop {
   margin: 0px;
+  margin-top: 50px;
 }
 
 .description {
