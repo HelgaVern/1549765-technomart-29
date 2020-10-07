@@ -607,7 +607,7 @@ img {
 
 .enter svg {
   position: absolute;
-  left: 12px;
+  left: 18px;
 }
 .enter:hover path {
   fill: var(--gray-18);
@@ -690,7 +690,7 @@ img {
 .product-item {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   width: 220px;
   height: 318px;
@@ -709,6 +709,14 @@ img {
   justify-content: center;
   width: 184px;
   height: 164px;
+}
+
+.product-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 152px;
 }
 
 .product-item:nth-child(4n) {
@@ -768,12 +776,13 @@ img {
 }
 
 .search:focus {
+  padding-left: 42px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
-.search:focus path {
-  fill: var(--basic-red);
+.search:focus ~ svg {
+  color: var(--basic-red);
 }
 
 .search::placeholder {
@@ -785,7 +794,6 @@ img {
 }
 
 .search:focus::placeholder {
-  content: "Перфоратор";
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -808,8 +816,8 @@ img {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-self: center;
-  width: 400px;
+  justify-content: center;
+  height: 100%;
   margin-left: 35px;
 }
 
@@ -824,7 +832,7 @@ img {
   border: 3px solid var(--basic-white);
   padding-left: 74px;
   padding-right: 45px;
-  padding-top: 7px;
+  padding-top: 3px;
   padding-bottom: 8px;
   position: relative;
 }
@@ -866,7 +874,6 @@ img {
   display: inline-block;
   vertical-align: baseline;
   padding: 12px 24px;
-  
   height: 45px;
   font-family: Cuprum;
   font-style: normal;
@@ -882,18 +889,6 @@ img {
   padding-left: 47px;
   margin-right: 10px;
 }
-
-/*.enter::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 17px;
-  background-image: url("../img/icon-login.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-  top: 14px;
-  left: 19px;
-} */
 
 .enter-link:hover {
   background-color: var(--basic-white);
