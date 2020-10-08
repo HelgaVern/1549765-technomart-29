@@ -70,7 +70,7 @@
     <h1 class="visually-hidden">Техномарт</h1>
     <section class="promo" id="promo">
       <h2 class="visually-hidden">Промо-блок</h2>
-      <div class="promo-box-material">
+      <div class="promo-box-material new-label">
         <h3 class="promo-box-title">Материалы</h3>
         <a class="promo-box-button" href="">На любой вкус</a>
       </div>
@@ -134,7 +134,7 @@
       </div>
       <ul class="item-list">
         <li class="product-item">
-          <div class="product-img"><img src="img/perf BFG 9000.png" height="164" width="184"
+          <div class="product-img"><img src="img/perf-9000.png" height="164" width="184"
               alt="Перфоратор BOSCH BFG 9000">
           </div>
           <div class="product-description">
@@ -143,8 +143,8 @@
             <p class="price-new">15500 Р.</p>
           </div>
         </li>
-        <li class="product-item">
-          <div class="product-img"><img src="img/perf BFG 3000.png" height="112" width="127"
+        <li class="product-item new-label">
+          <div class="product-img"><img src="img/perf-3000.png" height="112" width="127"
               alt="Перфоратор BOSCH BFG 3000">
           </div>
           <div class="product-description">
@@ -154,7 +154,7 @@
           </div>
         </li>
         <li class="product-item">
-          <div class="product-img"><img src="img/perf BFG 6000.png" height="128" width="144"
+          <div class="product-img"><img src="img/perf-6000.png" height="128" width="144"
               alt="Перфоратор BOSCH BFG 6000">
           </div>
           <div class="product-description">
@@ -163,8 +163,8 @@
             <p class="price-new">25500 Р.</p>
           </div>
         </li>
-        <li class="product-item">
-          <div class="product-img"><img src="img/perf BFG 2000.png" height="112" width="127"
+        <li class="product-item new-label">
+          <div class="product-img"><img src="img/perf-2000.png" height="112" width="127"
               alt="Перфоратор BOSCH BFG 2000">
           </div>
           <div class="product-description">
@@ -230,7 +230,7 @@
           изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-item-list">
           <ul class="item-list">
-            <li class="services-list-item"><a class="services-link" href="#delivery">Доставка</a></li>
+            <li class="services-list-item services-list-active"><a class="services-link services-list-active" href="#delivery">Доставка</a></li>
             <li class="services-list-item"><a class="services-link" href="#guaranty">Гарантия</a></li>
             <li class="services-list-item"><a class="services-link" href="#credit">Кредит</a></li>
           </ul>
@@ -242,13 +242,13 @@
                 Ведь мы неплохо заработаем,<br>
                 поднимая его на ваш этаж!</p>
             </li>
-            <li class="services-description-item" id="guaranty">
+            <li class="services-description-item services-description-none" id="guaranty">
               <h3 class="title-pop">Гарантия</h3>
               <p class="description">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара,
                 спровоцированного его<br> возгоранием, вы всегда можете быть уверены в нашей<br> гарантии. Мы обменяем
                 сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
             </li>
-            <li class="services-description-item" id="credit">
+            <li class="services-description-item services-description-none" id="credit">
               <h3 class="title-pop">Кредит</h3>
               <p class="description">Залезть в долговую яму стало проще!<br> Кредитные консультанты придут вам на
                 помощь.
@@ -268,7 +268,7 @@
           товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
         <ul class="item-list">
           <li class="transport-item">Деловые линии</li>
-          <li class="transport-item">Автотрей динг</li>
+          <li class="transport-item">Автотрейдинг</li>
           <li class="transport-item">ЖелДорЭкспедиция</li>
         </ul>
         <a class="button" href="">Подробнее о компании</a>
@@ -289,7 +289,7 @@
         <a class="logo-footer" href="index.html">
           <img src="img/logo.svg" height="68" width="220" alt="Логотип Техномарт">
         </a>
-        <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="phone-footer"
+        <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="phone-footer"
             href="tel:+78125550555">+7 (812) 555-05-55</a></p>
       </div>
       <div class="footer-item-list">
@@ -345,10 +345,34 @@
         <div class="footer-mail">
           <p class="footer-information">Обратная связь:<br><a class="contacts"
               href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p class="footer-information">Разработано-<br>
-            <a class="contacts" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
+          <p class="footer-information">Разработано —<br>
+            <a class="contacts" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
         </div>
       </div>
     </section>
   </footer>
+
+
+  <section class="modal modal-write">
+    <h2 class="visually-hidden">Напишите нам</h2>
+    <form action="" method="POST">
+      <p>
+        <label class="" for="name">Ваше имя:</label>
+        <input type="text" name="name" id="name" value="Имя Фамилия">
+        <label class="" for="email">Ваш E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="email@example.com">
+     </p>
+      <p>
+        <label for="" for="letter">Текст письма:</label>
+        <textarea name="letter" id="letter" rows="10"></textarea>
+      </p>
+     <input type="submit" value="отправить" class="button">
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
+
+  <section class="modal modal-map">
+    <h2>Как до нас добраться</h2>
+    <button class="modal-close" type="button" aria-label="Закрыть">Закрыть</button>
+  </section>
 </body>
