@@ -410,7 +410,6 @@ img {
 
 .site-navigation {
   display: flex;
-  flex-wrap:;
   justify-content: space-around;
   align-items: center;
   /*height: 100%;*/
@@ -1661,7 +1660,6 @@ img {
   margin: auto;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  box-shadow: ;
   filter: drop-shadow(0px 20px 40px rgba(0, 0, 0, 0.75));
 }
 
