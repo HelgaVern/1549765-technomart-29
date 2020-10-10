@@ -40,7 +40,7 @@
       <p class="about"><i>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</i></p>
       <div class="contacts-header">
         <a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
-        <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="enter-index">
         <a class="enter-link enter" href="">
@@ -356,16 +356,16 @@
 
   <section class="modal modal-write">
     <h2 class="visually-hidden">Напишите нам</h2>
-    <form action="" method="post">
-      <p>
-        <label class="" for="name">Ваше имя:</label>
-        <input type="text" name="name" id="name" value="Имя Фамилия">
-        <label class="" for="email">Ваш E-mail:</label>
-        <input type="email" name="email" id="email" placeholder="email@example.com">
+    <form class="write-form" action="" method="post">
+      <p class="personal-lable">
+        <label class="write-label" for="name">Ваше имя: 
+        <input type="text" name="name" id="name" value="Имя Фамилия"> </label>
+        <label class="write-label" for="email">Ваш E-mail: 
+        <input type="email" name="email" id="email" placeholder="email@example.com"> </label> 
       </p>
-      <p>
-        <label for="letter">Текст письма:</label>
-        <textarea name="letter" id="letter" rows="10"></textarea>
+      <p class="textarea-form">
+        <label class="write-label" for="letter">Текст письма:</label>
+        <textarea name="letter" id="letter" rows="5" cols="73">В свободной форме</textarea>
       </p>
       <input type="submit" value="отправить" class="button">
     </form>
@@ -373,7 +373,8 @@
   </section>
 
   <section class="modal modal-map">
-    <h2>Как до нас добраться</h2>
-    <button class="modal-close" type="button" aria-label="Закрыть">Закрыть</button>
+    <h2 class="visually-hidden">Как до нас добраться</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002978!2d30.320858715906574!3d59.938719169054394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602355637912!5m2!1sru!2sru" width="943" height="449" frameborder="0" style="border:0;" allowfullscreen="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-hidden="false" tabindex="0"></iframe>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
