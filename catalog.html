@@ -16,22 +16,31 @@
   <header class="main-header">
     <div class="header-top-area-bar">
       <section class="header-top-area">
-        <!--  <h2 class="invisible">Информация для пользователя</h2> -->
-        <a class="main-logo" href="index.html">
+        <h2 class="visually-hidden">Информация для пользователя</h2>
+        <a class="main-logo" href="#">
           <img src="img/logo-technomart.svg" height="18" width="108" alt="Логотип Техномарт">
         </a>
-        <input class="search" type="search" placeholder="Поиск">
-        <a class="header-link" href=""> Закладки:0 </a>
-        <a class="header-link" href=""> Корзина:10 </a>
+        <form class="header-search-form">
+          <input class="search" type="search" placeholder="Поиск:">
+          <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g opacity="0.3">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"
+                fill="currentColor" />
+            </g>
+          </svg>
+        </form>
+        <a class="header-link mark" href=""> Закладки:0 </a>
+        <a class="header-link basket count" href=""> Корзина:10 </a>
         <a class="order-link" href=""> Оформить заказ </a>
       </section>
     </div>
     <section class="header-login-area">
-      <!-- <h2 class="invisible">Авторизация</h2> -->
+      <h2 class="visually-hidden">Авторизация</h2>
       <p class="about"><i>Интернет-магазин<br> строительных материалов<br> и инструментов для ремонта</i></p>
       <div class="contacts-header">
-        <p><a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a></p>
-        <p class="header-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
+        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
       <div class="enter">
         <a class="enter-link name" href="">Равшан Джамшутович</a>
@@ -56,16 +65,65 @@
   <main class="container">
     <div class="wrapper">
       <ul class="item-list breadcrumbs-list">
-        <li><a class="breadcrumbs" href="index.html">Главная страница</a></li>
+        <li><a class="breadcrumbs" href="index.html" aria-label="Главная страница">
+            <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE" />
+              <path
+                d="M13.831 6.365L12 4.751V0H9.99998V2.987L7.33198 0.635C7.31198 0.618 7.28898 0.612 7.26798 0.598C7.24294 0.579705 7.21614 0.56396 7.18798 0.551C7.15708 0.540195 7.12529 0.532163 7.09298 0.527C7.06198 0.521 7.03198 0.515 6.99998 0.515C6.96898 0.515 6.93898 0.521 6.90798 0.527C6.87551 0.531919 6.84366 0.5403 6.81298 0.552C6.78498 0.563 6.75998 0.581 6.73298 0.598C6.71198 0.612 6.68798 0.618 6.66898 0.635L0.170976 6.365C0.0162401 6.50291 -0.0375953 6.72187 0.0355474 6.9158C0.10869 7.10974 0.293707 7.23862 0.500976 7.24C0.622907 7.24035 0.740711 7.19586 0.831976 7.115L6.99998 1.677L13.169 7.115C13.3778 7.27913 13.6784 7.25178 13.8542 7.05265C14.0299 6.85352 14.0198 6.55183 13.831 6.365Z"
+                fill="#C1C6CE" />
+            </svg>
+          </a></li>
         <li><a class="breadcrumbs" href="">Каталог</a></li>
         <li><a class="breadcrumbs" href="">Инструмент</a></li>
-        <li><a class="breadcrumbs" href="">Перфораторы</a></li>
+        <li class="breadcrumbs-current"><a class="breadcrumbs" href="">Перфораторы</a></li>
       </ul>
       <h1 class="title-pop-catalog">Перфораторы</h1>
 
-      <section class="filter">
-        <h2>Форма фильтра</h2>
-        <!-- Здесь будет форма фильтра -->
+      <section class="filter-catalog">
+        <h2 class="sort-header">Фильтр</h2>
+        <form class="filter">
+          <fieldset>
+            <legend>Цена</legend>
+          </fieldset>
+          <fieldset>
+            <legend>Производители</legend>
+             <ul class="item-list">
+               <li class="filter-option filter-checkbox">
+                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="bosch" checked>
+                 <label for="bosch">bosch</label>
+               </li>
+               <li class="filter-option filter-checkbox">
+                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="interskol">
+                 <label for="interskol">интерскол</label>
+               </li>
+               <li class="filter-option filter-checkbox">
+                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="makita" checked>
+                 <label for="makita">makita</label>
+               </li>
+               <li class="filter-option filter-checkbox">
+                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="dewalt">
+                 <label for="dewalt">dewalt</label>
+               </li>
+               <li class="filter-option filter-checkbox">
+                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="hitachi">
+                 <label for="hitachi">hitachi</label>
+               </li>
+             </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Питание</legend>
+            <ul class="item-list">
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-ratio" type="ratio" id="filter-battery" checked>
+                <label for="filter-battery">аккумуляторные</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden filter-input-ratio" type="ratio" id="filter-chain">
+                <label for="filter-chain">сетевые</label>
+              </li>
+            </ul>
+          </fieldset>
+        </form>
       </section>
       <section class="sort">
         <h2 class="sort-header">СОРТИРОВКА:</h2>
@@ -80,71 +138,94 @@
         </div>
       </section>
       <section class="popular-product">
-        <!--<h2>Товары</h2> -->
+        <h2 class="visually-hidden">Товары</h2>
         <ul class="item-list-catalog">
           <li class="product-item-catalog">
-            <img src="img/BOSCH BFG 6000.png" width="144" height="128" alt="Перфоратор BOSCH">
-            <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
-            <p class="price-old">30500 Р.</p>
-            <p class="price-new">25500 Р</p>
-            <p class="new-icon">new</p>
+            <div class="product-img"><img src="img/perf-6000.png" height="128" width="144"
+                alt="Перфоратор BOSCH BFG 6000">
+            </div>
+            <div class="product-description">
+              <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
+              <p class="price-old">30500 Р.</p>
+              <p class="price-new">25500 Р.</p>
+            </div>
           </li>
           <li class="product-item-catalog">
-            <img src="img/BOSCH BFG 6000.png" width="144" height="128" alt="Перфоратор BOSCH">
-            <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
-            <p class="price-old">30500 Р.</p>
-            <p class="price-new">25500 Р.</p>
-            <p class="new-icon">new</p>
+            <div class="product-img"><img src="img/perf-6000.png" height="128" width="144"
+                alt="Перфоратор BOSCH BFG 6000">
+            </div>
+            <div class="product-description">
+              <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
+              <p class="price-old">30500 Р.</p>
+              <p class="price-new">25500 Р.</p>
+            </div>
           </li>
           <li class="product-item-catalog">
-            <button class="button-catalog-buy" type="button">Купить</button>
-            <button class="button-catalog-tab" type="button">В Закладки</button>
-            <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
-            <p class="price-old">30500 Р.</p>
-            <p class="price-new">25500 Р.</p>
-            <p class="new-icon">new</p>
+            <div class="product-img">
+              <button class="button-catalog-buy" type="button">Купить</button>
+              <button class="button-catalog-tab" type="button">В Закладки</button>
+            </div>
+            <div class="product-description">
+              <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
+              <p class="price-old">30500 Р.</p>
+              <p class="price-new">25500 Р.</p>
+            </div>
           </li>
           <li class="product-item-catalog">
-            <img src="img/BOSCH BFG 3000.png" width="144" height="128" alt="Перфоратор BOSCH">
-            <a class="product-link" href="">Перфоратор BOSCH BFG 3000</a>
-            <p class="price-old">22500 Р</p>
-            <p class="price-new">15500 Р</p>
-            <p class="new-icon">new</p>
+            <div class="product-img"><img src="img/perf-3000.png" height="112" width="127"
+                alt="Перфоратор BOSCH BFG 3000">
+            </div>
+            <div class="product-description">
+              <a class="product-link" href="">Перфоратор BOSCH BFG 3000</a>
+              <p class="price-old">22500 Р.</p>
+              <p class="price-new">15500 Р.</p>
           </li>
           <li class="product-item-catalog">
-            <img src="img/BOSCH BFG 3000.png" width="144" height="128" alt="Перфоратор BOSCH">
-            <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
-            <p class="price-old">30500 Р.</p>
-            <p class="price-new">25500 Р.</p>
-            <p class="new-icon">new</p>
+            <div class="product-img"><img src="img/perf-6000.png" height="128" width="144"
+                alt="Перфоратор BOSCH BFG 6000">
+            </div>
+            <div class="product-description">
+              <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
+              <p class="price-old">30500 Р.</p>
+              <p class="price-new">25500 Р.</p>
+            </div>
           </li>
           <li class="product-item-catalog">
-            <img src="img/BOSCH BFG 2000.png" width="144" height="128" alt="Перфоратор BOSCH">
-            <a class="product-link" href="">Перфоратор BOSCH BFG 2000</a>
-            <p class="price-old"></p>
-            <p class="price-new">12500 Р</p>
-            <p class="new-icon">new</p>
+            <div class="product-img"><img src="img/perf-2000.png" height="112" width="127"
+                alt="Перфоратор BOSCH BFG 2000">
+            </div>
+            <div class="product-description">
+              <a class="product-link" href="">Перфоратор BOSCH BFG 2000</a>
+              <p class="visually-hidden">old</p>
+              <p class="price-new">12500 Р.</p>
           </li>
           <li class="product-item-catalog">
-            <img src="img/Object.png" width="144" height="128" alt="Перфоратор BOSCH">
-            <a class="product-link" href="">Перфоратор BOSCH BFG 3000</a>
-            <p class="price-old">22500 Р</p>
-            <p class="price-new">15500 Р</p>
-            <p class="new-icon">new</p>
+            <div class="product-img"><img src="img/perf-3000.png" height="112" width="127"
+                alt="Перфоратор BOSCH BFG 3000">
+            </div>
+            <div class="product-description">
+              <a class="product-link" href="">Перфоратор BOSCH BFG 3000</a>
+              <p class="price-old">22500 Р.</p>
+              <p class="price-new">15500 Р.</p>
           </li>
           <li class="product-item-catalog">
-            <img src="img/BOSCH BFG 6000.png" width="144" height="128" alt="Перфоратор BOSCH">
-            <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
-            <p class="price-old">30500 Р.</p>
-            <p class="price-new">25500 Р.</p>
-            <p class="new-icon">new</p>
+            <div class="product-img"><img src="img/perf-6000.png" height="128" width="144"
+                alt="Перфоратор BOSCH BFG 6000">
+            </div>
+            <div class="product-description">
+              <a class="product-link" href="">Перфоратор BOSCH BFG 6000</a>
+              <p class="price-old">30500 Р.</p>
+              <p class="price-new">25500 Р.</p>
+            </div>
           </li>
           <li class="product-item-catalog">
-            <img src="img/BOSCH BFG 2000.png" width="144" height="128" alt="Перфоратор BOSCH">
-            <a class="product-link" href="">Перфоратор BOSCH BFG 2000</a>
-            <p class="price-new">12500 Р
-            <p></p>
-            <p class="new-icon">new</p>
+            <div class="product-img"><img src="img/perf-2000.png" height="112" width="127"
+                alt="Перфоратор BOSCH BFG 2000">
+            </div>
+            <div class="product-description">
+              <a class="product-link" href="">Перфоратор BOSCH BFG 2000</a>
+              <p class="visually-hidden">old</p>
+              <p class="price-new">12500 Р.</p>
           </li>
         </ul>
         <ul class="item-list-pages">
@@ -172,12 +253,12 @@
   </main>
   <footer class="main-footer">
     <section class="footer-nav">
-      <!-- <h2 class="invisible">Основная информация</h2> -->
+      <h2 class="visually-hidden">Основная информация</h2>
       <div class="footer-nav-logo">
         <a class="logo-footer" href="index.html">
-          <img src="img/логотип.svg" height="68" width="220" alt="Логотип Техномарт">
+          <img src="img/logo.svg" height="68" width="220" alt="Логотип Техномарт">
         </a>
-        <p class="footer-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="phone-footer"
+        <p class="footer-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br><a class="phone-footer"
             href="tel:+78125550555">+7 (812) 555-05-55</a></p>
       </div>
       <div class="footer-item-list">
@@ -198,24 +279,43 @@
     </section>
     <section class="footer-contacts">
       <div class="footer-inf">
-        <!-- <h2 class="invisible">Обратная связь</h2> -->
+        <h2 class="visually-hidden">Обратная связь</h2>
         <p class="footer-information"> © 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
         <ul class="item-list">
           <li class="social-item">
-            <a class="social-button" href=""><!--Вконтакте--> <img src="img/Вконтакте.png"></a>
+            <a class="social-button" href="">
+              <!--Вконтакте-->
+              <svg width="26" height="15" viewBox="0 0 26 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15.5403 11.7281C16.4609 11.4384 17.6396 13.6406 18.8943 14.4834C19.8361 15.1219 20.5573 14.9841 20.5573 14.9841L23.9017 14.9372C23.9017 14.9372 25.6495 14.8322 24.8233 13.4803C24.7549 13.3678 24.3389 12.4781 22.334 10.6472C20.2376 8.73186 20.5217 9.04218 23.0456 5.73093C24.5835 3.71249 25.1988 2.47968 25.0062 1.95468C24.8213 1.44936 23.6918 1.58061 23.6918 1.58061L19.9237 1.60593C19.5568 1.60686 19.2458 1.71749 19.1042 2.08874C19.1013 2.09249 18.5062 3.65061 17.7127 4.9753C16.0362 7.77749 15.367 7.92655 15.0896 7.75124C14.4531 7.3453 14.6139 6.1228 14.6139 5.25374C14.6139 2.5378 15.0299 1.4053 13.7993 1.1128C13.3881 1.0153 13.0876 0.951552 12.039 0.942177C10.6985 0.922489 9.5603 0.942177 8.91511 1.25061C8.4866 1.45968 8.15822 1.91811 8.35756 1.94436C8.60793 1.97718 9.16934 2.09436 9.46978 2.49374C9.85593 3.01124 9.84437 4.17093 9.84437 4.17093C9.84437 4.17093 10.0649 7.36874 9.32437 7.7653C8.81593 8.03718 8.12067 7.48218 6.62519 4.9378C5.86156 3.63655 5.28474 2.19843 5.28474 2.19843C5.28474 2.19843 5.17304 1.93124 4.97082 1.78499C4.73008 1.61155 4.39304 1.55624 4.39304 1.55624L0.816594 1.57874C0.816594 1.57874 0.279261 1.59374 0.0818532 1.82436C-0.0934061 2.02874 0.0674088 2.45061 0.0674088 2.45061C0.0674088 2.45061 2.86867 8.90155 6.04067 12.1509C8.94882 15.1341 12.2537 14.9362 12.2537 14.9362H13.7511C13.7511 14.9362 14.2027 14.8856 14.4339 14.6437C14.6496 14.4187 14.6399 13.9959 14.6399 13.9959C14.6399 13.9959 14.6101 12.0187 15.5403 11.7281Z"
+                  fill="white" />
+              </svg>
+            </a>
           </li>
-          <li>
-            <a class="social-button" href=""><!--Фейсбук--> <img src="img/Фейсбук.png"></a>
+          <li class="social-item">
+            <a class="social-button" href="">
+              <!--Фейсбук-->
+              <svg width="12" height="22" viewBox="0 0 12 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white" />
+              </svg>
+            </a>
           </li>
-          <li>
-            <a class="social-button" href=""><!--Инстаграм--> <img src="img/Инстаграм.png"></a>
+          <li class="social-item">
+            <a class="social-button" href="">
+              <!--Инстаграм-->
+              <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z"
+                  fill="white" />
+              </svg>
+            </a>
           </li>
         </ul>
         <div class="footer-mail">
           <p class="footer-information">Обратная связь:<br><a class="contacts"
               href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
-          <p class="footer-information">Разработано:<br>
-            <a class="contacts" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a></p>
+          <p class="footer-information">Разработано —<br>
+            <a class="contacts" href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
         </div>
       </div>
     </section>
