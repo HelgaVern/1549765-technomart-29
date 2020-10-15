@@ -42,9 +42,9 @@
         <a class="phone-header" href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
       </div>
-      <div class="enter">
-        <a class="enter-link name" href="">Равшан Джамшутович</a>
-        <div>
+      <div class="enter-index name">
+        <a class="enter-link person" href="">Равшан Джамшутович</a>
+        <div class="personal-links">
           <a class="personal" href="">Мои заказы</a>
           <a class="personal" href="">Личный кабинет</a>
         </div>
@@ -114,11 +114,11 @@
             <legend>Питание</legend>
             <ul class="item-list">
               <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-ratio" type="ratio" id="filter-battery" checked>
+                <input class="visually-hidden filter-input-ratio" type="radio" name="product-group" id="filter-battery" checked>
                 <label for="filter-battery">аккумуляторные</label>
               </li>
               <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-ratio" type="ratio" id="filter-chain">
+                <input class="visually-hidden filter-input-ratio" type="radio" name="product-group" id="filter-chain">
                 <label for="filter-chain">сетевые</label>
               </li>
             </ul>
@@ -133,8 +133,16 @@
           <li><a class="sort-link" href="">По функционалу</a></li>
         </ul>
         <div class="grow">
-          <a class="sort-link" href="">По возрастанию</a>
-          <a class="sort-link" href="">По убыванию</a>
+          <a class="grow-link use" href="" aria-label="По возрастанию">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.66235 0L11.1624 10L0.162354 10" fill="currentColor"/>
+              </svg>
+          </a>
+          <a class="grow-link" href="" aria-label="По убыванию">
+            <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5.66235 10L0.162354 0H11.1624" fill="currentColor"/>
+              </svg>
+          </a>
         </div>
       </section>
       <section class="popular-product">

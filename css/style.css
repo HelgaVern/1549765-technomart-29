@@ -801,8 +801,8 @@ img {
 .filter-input-ratio + label::before {
   position: absolute;
   content: '';
-  width: 25px;
-  height: 25px;
+  width: 26px;
+  height: 26px;
   left: -40px;
   border: 4px solid var(--gray-2);
   border-radius: 50%;
@@ -945,6 +945,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content:;
   width: 281px;
   height: 158px;
   margin-bottom: 23px;
@@ -1532,7 +1533,22 @@ img {
   border-bottom: 1px solid var(--basic-red);
 }
 
-.use {
+.grow .grow-link {
+  padding-left: 21px;
+  padding-right: 0px;
+}
+
+.grow-link svg {
+  color: var(--gray-2);
+  opacity: 1;
+}
+
+.grow-link:hover svg {
+  color: var(--basic-black);
+}
+
+.use,
+.use svg {
   color: var(--basic-red);
 }
 
@@ -1670,11 +1686,28 @@ img {
 }
 
 .personal {
+  position: relative;
   font-family: Cuprum, "Arial", "Helvetica CY", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 18px;
+  width: 100%;
   color: var(--gray-6);
+}
+
+.personal::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 7px;
+  right: 14px;
+  top: 6px;
+  background-color: var(--gray-6);
+  border-radius: 50%;
+}
+
+.personal:last-child::after {
+  display: none;
 }
 
 .personal:hover {
@@ -1694,6 +1727,21 @@ img {
 
 .name {
   width: 299px;
+  margin: 0px;
+}
+
+.personal-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 299px;
+  padding: 0px 45px;
+  margin-top: -50px;
+}
+
+.person {
+  width: 299px;
+  margin-top: 23px;
 }
 
 .name:hover {
@@ -1707,16 +1755,23 @@ img {
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-black);
+  padding-right: 140px;
+  padding-left: 20px;
+  margin: 0px;
 }
 
 .sort {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 17px;
 }
 
 .sort .item-list {
   display: flex;
   justify-content: space-between;
+  width: 355px;
+  padding-left: 0px;
 }
 
 .background {
@@ -1730,7 +1785,6 @@ img {
   min-height: 261px;
   background-color: var(--basic-background);
   margin: 0 auto;
-  padding-top: 64px;
 }
 
 .modal {
