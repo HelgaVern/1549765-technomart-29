@@ -24,6 +24,7 @@
   --gray-19: #C1C6CE;
   --gray-20: #D7DCDE;
   --gray-21: #ABABAB;
+  --gray-22: #F1F1F1;
   --basic-background: #F1F5F7;
   --basic-yellow: #FFBF47;
   --basic-blue: #3BBCE3;  --basic-lilac: #DC91D8;
@@ -429,8 +430,8 @@ img {
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 18px 28px;
   margin: 0px;
+  padding: 0px 28px;
 } 
 
 .footer-item-list {
@@ -781,13 +782,18 @@ img {
 
 .filter fieldset {
   border: none;
-  margin: 0px;
+  margin-bottom: 0px;
   padding: 0px;
+}
+
+.filter .filter-fieldset {
+  padding-bottom: 12px;
 }
 
 .filter-option {
   margin-bottom: 0px;
-  padding-bottom: 25px;
+  margin-top: 6px;
+  padding-bottom: 14px;
 }
 
 .filter-option label {
@@ -806,21 +812,33 @@ img {
 .filter-input-checkbox + label::before {
   position: absolute;
   content: '';
-  top: -3px;
   left: -40px;
+  top: -3px;
   width: 23px;
   height: 23px;
-  background-image: url('../img/checkbox-off.svg');
+  border: 2px solid var(--gray-2);
+  border-radius: 2px;
 }
 
-.filter-input-checkbox:checked + label::before{
+.filter-input-checkbox:checked + label::after {
   position: absolute;
   content: '';
-  top: 0px;
-  width: 27px;
-  height: 23px;
-  left: -40px;
-  background-image: url('../img/checkbox-on.svg');
+  width: 22px;
+  height: 17px;
+  left: -37px;
+  top: -3px;
+  background-image: url('../img/input-filter.svg');
+}
+
+.filter-input-checkbox:hover + label::before {
+  border: 2px solid var(--gray-9);
+}
+
+.filter-input-checkbox:hover + label, 
+.filter-input-checkbox:focus + label,
+.filter-input-ratio:hover + label,
+.filter-input-ratio:focus + label {
+  color: var(--gray-9);
 }
 
 .filter-input-ratio + label::before {
@@ -843,6 +861,20 @@ img {
   background-color: var(--gray-2);
   border-radius: 50%;
 }
+
+.filter-input-ratio:hover + label::before,
+.filter-input-ratio:checked:hover ~ label::after {
+  border: 4px solid var(--gray-9);
+}
+
+.filter-input-checkbox:disabled + label::before,
+.filter-input-ratio:disabled ~ label::after,
+.filter-input-checkbox:disabled + label,
+.filter-input-checkbox:disabled + label::after, 
+.filter-input-ratio:disabled ~ label {
+  opacity: 0.4;
+}
+
 
 .range-filter {
   padding-bottom: 26px;
@@ -895,6 +927,7 @@ img {
 .price-controls {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .price-controls label {
@@ -933,8 +966,12 @@ img {
   border-bottom: 1px solid var(--gray-16);
 }
 
-.filter fieldset:last-child {
+.filter .current-fieldset {
   border-bottom: none;
+}
+
+.current-fieldset legend {
+  margin: 10px 0px;
 }
 
 .filter .item-list {
@@ -950,6 +987,7 @@ img {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-top: 13px;
   width: 100%;
   height: 38px;
   background-color: var(--basic-white);
@@ -1150,6 +1188,9 @@ img {
 .site-navigation-link {
   display: block;
   margin: 0px;
+  height: 60px;
+  padding-top: 18px;
+  text-align: center;
   color: var(--basic-white);
 }
 
@@ -2038,7 +2079,7 @@ img {
   color: var(--basic-black);
   border-top: 7px solid var(--basic-red);
   background-color: var(--basic-white);
-  filter: drop-shadow(0px 20px 4px rgba(0, 0, 0, 0.15));
+  filter: drop-shadow(0px 10px 2px rgba(0, 0, 0, 0.15));
 }
 
 .modal-write {
@@ -2193,6 +2234,75 @@ img {
 
 .modal-map iframe {
   border: none;
+}
+
+.modal-mark {
+  display: none;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 630px;
+  height: 282px;
+  left: 425px;
+  margin: 0px;
+}
+
+.button-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--gray-22);
+  width: 100%;
+  padding: 37px 114px;
+}
+
+.button-div .button {
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 30px;
+  min-height: 38px;
+  width: 192px;
+}
+
+.button-div .button:nth-child(2) {
+  background-color: var(--basic-white);
+  color: var(--basic-black);
+}
+
+.modal-mark p {
+  position: relative;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  margin: 66px auto;
+}
+
+.modal-mark p::before {
+  position: absolute;
+  content: "";
+  width: 66px;
+  height: 66px;
+  left: -90px;
+  top: -20px;
+  background-image: url(../img/icon-mark.svg);
+}
+
+.modal-mark .modal-close {
+  position: relative;
+  bottom: 120px;
+  left: -15px;
+  width: 21px;
+  height: 21px;
+  border: 0;
+  padding: 0px;
+  cursor: pointer;
+  background-color: transparent;
 }
 
 .modal-show {
