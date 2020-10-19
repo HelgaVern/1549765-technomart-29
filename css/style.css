@@ -761,6 +761,18 @@ img {
   z-index: 0;
 }
 
+.item-new {
+  display: none;
+  position: absolute;
+  left: 150px;
+  top: 0px;
+  z-index: 2;
+}
+
+.item-show {
+  display: block;
+}
+
 .product-description {
   display: flex;
   flex-direction: column;
