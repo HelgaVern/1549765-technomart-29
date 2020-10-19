@@ -470,6 +470,7 @@ img {
 .product-item-catalog,
 .product-item {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -733,6 +734,22 @@ img {
   justify-content: center;
   margin-right: 19px;
   margin-bottom: 2px;
+}
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px;
+  height: 318px;
+  margin: 0px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding: 0px;
+  padding-bottom: auto;
+  background-color: var(--basic-white);
+  border: 1px solid var(--gray-5);
 }
 
 .product-img {
@@ -1475,6 +1492,7 @@ img {
   border-bottom: 19px solid transparent;
 }
 
+
 .new-icon {
   font-family: Cuprum, "Arial", "Helvetica CY", sans-serif;
   font-size: 14px;
@@ -2097,8 +2115,8 @@ img {
   position: fixed;
   top: 39px;
   bottom: 0px;
-  right: 17px;
-  margin: auto;
+  left: 25%;
+  margin: 0px;
   color: var(--basic-black);
   border-top: 7px solid var(--basic-red);
   background-color: var(--basic-white);
@@ -2265,9 +2283,9 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 630px;
+  width: 620px;
   height: 282px;
-  left: 425px;
+  left: center;
   margin: 0px;
 }
 
@@ -2312,15 +2330,15 @@ img {
   content: "";
   width: 66px;
   height: 66px;
-  left: 100px;
-  top: -20px;
+  left: 82px;
+  top: -18px;
   background-image: url(../img/icon-mark.svg);
 }
 
 .modal-mark .modal-close {
   position: relative;
-  top: -275px;
-  left: 615px;
+  top: -266px;
+  left: 602px;
   width: 21px;
   height: 21px;
   border: 0;
