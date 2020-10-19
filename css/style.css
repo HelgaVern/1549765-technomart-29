@@ -27,7 +27,8 @@
   --gray-22: #F1F1F1;
   --basic-background: #F1F5F7;
   --basic-yellow: #FFBF47;
-  --basic-blue: #3BBCE3;  --basic-lilac: #DC91D8;
+  --basic-blue: #3BBCE3;  
+  --basic-lilac: #DC91D8;
   --greenlight: #8ED78F;
   --yellowlight: #FFD180;
   --green-dark: #5FBB2D;
@@ -457,12 +458,17 @@ img {
 }
 
 .button-catalog {
-  display: flex;
-  padding: 38px auto;
+  display: none;
+  padding: 0px 41px;
+}
+
+.product-item-catalog:hover .product-img {
+  display: none;
 }
 
 .product-item-catalog {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -474,12 +480,17 @@ img {
   border: 1px solid var(--gray-5);
 }
 
-.product-item-catalog:nth-child(3n) {
-  margin-right: 0px;
+.product-item-catalog:hover .button-catalog {
+  display: block;
+  align-items: center;
 }
 
-.product-button {
+.product-item-catalog:hover {
   filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.15));
+}
+
+.product-item-catalog:nth-child(3n) {
+  margin-right: 0px;
 }
 
 .header-login-area {
@@ -736,11 +747,18 @@ img {
 
 .product-img {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   width: 184px;
   height: 164px;
+  z-index: 0;
+}
+
+.product-img img {
+  position: relative;
+  z-index: 0;
 }
 
 .product-description {
@@ -1447,9 +1465,11 @@ img {
 }
 
 .new-label {
+  position: relative;
   background-image: url("../img/catalog-new.png");
   background-repeat: no-repeat;
   background-position: right top;
+  z-index: 1;
 }
 
 .new-icon {
@@ -2281,6 +2301,7 @@ img {
   font-size: 24px;
   line-height: 30px;
   margin: 66px auto;
+  text-align: center;
 }
 
 .modal-mark p::before {
@@ -2288,15 +2309,15 @@ img {
   content: "";
   width: 66px;
   height: 66px;
-  left: -90px;
+  left: 100px;
   top: -20px;
   background-image: url(../img/icon-mark.svg);
 }
 
 .modal-mark .modal-close {
   position: relative;
-  bottom: 120px;
-  left: -15px;
+  top: -275px;
+  left: 615px;
   width: 21px;
   height: 21px;
   border: 0;
