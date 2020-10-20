@@ -898,8 +898,8 @@ img {
   content: '';
   width: 8px;
   height: 8px;
-  left: -25px;
-  top: 8.95px;
+  left: -29px;
+  top: 6px;
   background-color: var(--gray-2);
   border-radius: 50%;
 }
