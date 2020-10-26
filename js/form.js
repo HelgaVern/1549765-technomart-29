@@ -1,7 +1,7 @@
 const formLink = document.querySelector(".write");
 const formPopup = document.querySelector(".modal-write");
 const formClose = formPopup.querySelector(".modal-close");
-const writeForm = formPopup.querySelector(".modal-write");
+const writeForm = formPopup.querySelector(".write-form");
 const formLogin = formPopup.querySelector(".email-write");
 const formName = formPopup.querySelector(".name-write");
 
@@ -18,7 +18,6 @@ try {
 formLink.addEventListener("click", function () {
     evt.preventDefault();
     formPopup.classList.add("modal-show");
-
     if (storage) {
         formLogin.value = storage;
         formName.focus();
