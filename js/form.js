@@ -15,7 +15,7 @@ try {
     isStorageSupport = false;
 }
 
-formLink.addEventListener("click", function () {
+formLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     formPopup.classList.add("modal-show");
     if (storage) {
