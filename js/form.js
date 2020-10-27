@@ -21,9 +21,9 @@ formLink.addEventListener("click", function (evt) {
     if (storage) {
         formLogin.value = storage;
         formName.focus();
-  } else {
-    formLogin.focus();
-      }
+    } else {
+        formLogin.focus();
+    }
 });
 
 formClose.addEventListener("click", function (evt) {
@@ -45,10 +45,10 @@ writeForm.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
-      if (formPopup.classList.contains("modal-show")) {
-        evt.preventDefault();
-        formPopup.classList.remove("modal-show");
-        formPopup.classList.remove("modal-error");
-      }
+        if (formPopup.classList.contains("modal-show")) {
+            evt.preventDefault();
+            formPopup.classList.remove("modal-show");
+            formPopup.classList.remove("modal-error");
+        }
     }
-  });
+});
