@@ -245,7 +245,7 @@ img {
   margin: 0;
   padding: 0px;
   text-align: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .index-columns {
@@ -511,7 +511,7 @@ img {
   justify-content: space-between;
   align-items: center;
   width: 960px;
-  min-height: 158px;
+  min-height: 153px;
   margin: 0px auto;
   padding: 0px 10px;
 }
@@ -1140,8 +1140,8 @@ img {
   font-style: italic;
   font-size: 16px;
   margin: 0px;
-  width: auto;
-  padding-left: 30px;
+  width: 197px;
+  margin-left: 30px;
   line-height: 23px;
   color: var(--basic-red);
 }
@@ -1203,8 +1203,8 @@ img {
   align-items: center;
   justify-content: flex-end;
   width: 299px;
-  height: 158px;
-  margin-bottom: 20px;
+  min-height: 158px;
+  padding-bottom: 20px;
 }
 
 .enter-link {
@@ -1627,7 +1627,7 @@ img {
   line-height: 24px; 
   color: var(--basic-black);
   margin-top: 30px;
-  padding-right: 250px;
+  max-width: 460px;
 }
 
 .item-list,
@@ -2441,26 +2441,26 @@ img {
 
 @keyframes bounce {
   0% {
-    transform: translateY(-2000px);
+    transform: translate(-50%, -2000px);
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translate(-50%, 30px);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translate(-50%, -10px);
   }
 
   100% {
-    transform: translateY(0);
+    transform: translate(-50%, 0);
   }
 }
 
 @keyframes shake {
   0%,
   100% {
-    transform: translateX(0);
+    margin-left: 0;
   }
 
   10%,
@@ -2468,13 +2468,13 @@ img {
   50%,
   70%,
   90% {
-    transform: translateX(-10px);
+    margin-left: -10px;
   }
 
   20%,
   40%,
   60%,
   80% {
-    transform: translateX(10px);
+    margin-left: 10px;
   }
 }
