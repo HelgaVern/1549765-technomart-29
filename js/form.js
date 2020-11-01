@@ -18,7 +18,7 @@ try {
 formLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     formPopup.classList.add("modal-bounce");
-    formPopup.eddEventListener("animationend", (evt) => {
+    formPopup.addEventListener("animationend", (evt) => {
         evt.target.classList.add("modal-show");
         formPopup.classList.remove("modal-bounce");
     }, { once: true })
