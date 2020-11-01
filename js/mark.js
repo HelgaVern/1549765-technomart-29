@@ -2,7 +2,7 @@ const markLink = document.querySelector(".button-catalog-buy");
 const markPopup = document.querySelector(".modal-mark");
 const markClose = markPopup.querySelector(".modal-close");
 
-document.querySelectorAll('.button-catalog-buy').forEach (markLink => markLink.addEventListener("click", function (evt) {
+document.querySelectorAll(".button-catalog-buy").forEach (markLink => markLink.addEventListener("click", function (evt) {
     evt.preventDefault();
     markPopup.classList.add("modal-show");
 }));

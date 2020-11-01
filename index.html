@@ -8,7 +8,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>HTML Academy: Техномарт</title>
 </head>
 
@@ -29,6 +29,7 @@
                 fill="currentColor" />
             </g>
           </svg>
+          <label for="search" aria-label="Поле поиска"></label>
         </form>
         <a class="header-link mark" href=""> Закладки: 0 </a>
         <a class="header-link basket" href=""> Корзина: 0 </a>
@@ -115,14 +116,14 @@
           <a class="slide-input-2" href="#drill"></a>
         </div>
         <div class="slider-controls">
-          <button class="slider-button button-left" type="button" aria-label="Предыдущий слайд"><svg width="22" height="40"
-              viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button class="slider-button button-left" type="button" aria-label="Предыдущий слайд"><svg width="22"
+              height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2.07568 39.0586L0.0775051 37.0108L17.0931 19.564L0.0220261 2.06249L2.02116 0.0146904L21.0894 19.564L2.07568 39.0586Z"
                 fill="white" />
             </svg></button>
-          <button class="slider-button button-right" type="button" aria-label="Следующий слайд"><svg width="22" height="40"
-              viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button class="slider-button button-right" type="button" aria-label="Следующий слайд"><svg width="22"
+              height="40" viewBox="0 0 22 40" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M2.07568 39.0586L0.0775051 37.0108L17.0931 19.564L0.0220261 2.06249L2.02116 0.0146904L21.0894 19.564L2.07568 39.0586Z"
                 fill="white" />
@@ -260,8 +261,8 @@
           изо всех сил, чтобы сделать ваши покупки приятными.</p>
         <div class="services-item-list">
           <ul class="item-list">
-            <li class="services-list-item services-list-active"><a class="services-link"
-                href="#delivery">Доставка</a></li>
+            <li class="services-list-item services-list-active"><a class="services-link" href="#delivery">Доставка</a>
+            </li>
             <li class="services-list-item"><a class="services-link" href="#guaranty">Гарантия</a></li>
             <li class="services-list-item"><a class="services-link" href="#credit">Кредит</a></li>
           </ul>
@@ -294,9 +295,9 @@
       <section class="company" id="company">
         <h2 class="title">Компания «Техномарт»</h2>
         <p class="description">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для<br> ремонта и
-          строительства не оставит равнодушными любителей сэкономить на<br> гастарбайтерах. <br><br>Мы можем доставить
-          ваш
-          товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
+          строительства не оставит равнодушными любителей сэкономить на<br> гастарбайтерах. </p>
+        <p class="description"> Мы можем доставить
+          ваш товар в самые отдаленные точки России!<br> Техномарт работает со многими транспортными компаниями:</p>
         <ul class="item-list">
           <li class="transport-item">Деловые линии</li>
           <li class="transport-item">Автотрейдинг</li>
@@ -308,7 +309,9 @@
         <h2 class="title">Контакты</h2>
         <p class="description">Вы можете забрать товар сами,<br>
           заехав в наш офис:</p>
-        <img class="map-pop" src="img/map.jpg" height="158" width="300" alt="ул. Большая конюшенная, 19"><br>
+        <a href="https://goo.gl/maps/5kL47iT315NvSHKu6">
+          <img class="map-pop" src="img/map.jpg" height="158" width="300" alt="ул. Большая конюшенная, 19">
+        </a>
         <a class="button write" href="">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -389,9 +392,9 @@
     <form class="write-form" action="https://echo.htmlacademy.ru" method="post">
       <p class="personal-lable">
         <label class="write-label" for="name">Ваше имя:<br>
-        <input class="name-write" type="text" id="name" placeholder="Имя Фамилия" autofocus></label> 
+          <input class="name-write" type="text" id="name" placeholder="Имя Фамилия" autofocus></label>
         <label class="write-label" for="email">Ваш e-mail:
-        <input class="email-write" type="email" id="email" placeholder="email@example.com"></label> 
+          <input class="email-write" type="email" id="email" placeholder="email@example.com"></label>
       </p>
       <p class="textarea-form">
         <label class="write-label" for="letter">Текст письма:</label>
@@ -402,12 +405,16 @@
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <section class="modal modal-map" aria-modal="true" role="dialog" tabindex="-1"  aria-labelledby="modal-window-map">
+  <section class="modal modal-map" aria-modal="true" role="dialog" tabindex="-1" aria-labelledby="modal-window-map">
     <h2 class="visually-hidden" id="modal-window-map">Как до нас добраться</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002978!2d30.320858715906574!3d59.938719169054394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602355637912!5m2!1sru!2sru" width="943" height="449" style="border:0;" allowfullscreen title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-hidden="false" tabindex="0"></iframe>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002978!2d30.320858715906574!3d59.938719169054394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1602355637912!5m2!1sru!2sru"
+      width="943" height="449" style="border:0;" allowfullscreen
+      title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург" aria-hidden="false"
+      tabindex="0"></iframe>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 
-  <script src="js/form.min.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/map.min.js"></script>
 </body>

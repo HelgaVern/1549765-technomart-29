@@ -17,7 +17,11 @@ try {
 
 formLink.addEventListener("click", function (evt) {
     evt.preventDefault();
-    formPopup.classList.add("modal-show");
+    formPopup.classList.add("modal-bounce");
+    formPopup.eddEventListener("animationend", (evt) => {
+        evt.target.classList.add("modal-show");
+        formPopup.classList.remove("modal-bounce");
+    }, { once: true })
     if (storage) {
         formLogin.value = storage;
         formName.focus();
@@ -30,12 +34,16 @@ formClose.addEventListener("click", function (evt) {
     evt.preventDefault();
     formPopup.classList.remove("modal-show");
     formPopup.classList.remove("modal-error");
+    formPopup.classList.remove("modal-bounce");
 });
 
 writeForm.addEventListener("submit", function (evt) {
     if (!formLogin.value || !formName.value) {
         evt.preventDefault();
         formPopup.classList.add("modal-error");
+        formPopup.addEventListener("animationend", (evt) => {
+            evt.target.classList.remove("modal-error");
+        }, { once: true })
     } else {
         if (isStorageSupport) {
             localStorage.setItem("login", formLogin.value);
@@ -49,6 +57,7 @@ window.addEventListener("keydown", function (evt) {
             evt.preventDefault();
             formPopup.classList.remove("modal-show");
             formPopup.classList.remove("modal-error");
+            formPopup.classList.remove("modal-bounce");
         }
     }
 });

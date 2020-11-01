@@ -8,7 +8,7 @@
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
   <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>Техномарт каталог магазина</title>
 </head>
 
@@ -21,7 +21,7 @@
           <img src="img/logo-technomart.svg" height="18" width="108" alt="Логотип Техномарт">
         </a>
         <form class="header-search-form">
-          <input class="search" type="search" placeholder="Поиск:">
+          <input class="search" type="search" id="search" placeholder="Поиск:">
           <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g opacity="0.3">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -29,6 +29,7 @@
                 fill="currentColor" />
             </g>
           </svg>
+          <label for="search" aria-label="Поле поиска"></label>
         </form>
         <a class="header-link mark" href=""> Закладки:0 </a>
         <a class="header-link basket count" href=""> Корзина:10 </a>
@@ -47,10 +48,12 @@
           <a class="person" href="">
             Равшан Джамшутович
           </a>
-          <a class="exit" href="">
+          <a class="exit" href="" aria-label="Покинуть страницу">
             <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 9L11.125 0.5V6.5H5.125V11.5H11.125V17.5L20 9Z" fill="currentColor"/>
-              <path d="M2.10601 14.452V3.548C2.12401 3.172 2.27701 2.491 3.11601 2.491H8.14301V0.5H3.11601C0.938006 0.5 0.112006 2.31 0.0870056 3.527V14.473C0.112006 15.689 0.938006 17.5 3.11601 17.5H8.14301V15.51H3.11601C2.27701 15.51 2.12401 14.827 2.10601 14.452Z" fill="currentColor"/>
+              <path d="M20 9L11.125 0.5V6.5H5.125V11.5H11.125V17.5L20 9Z" fill="currentColor" />
+              <path
+                d="M2.10601 14.452V3.548C2.12401 3.172 2.27701 2.491 3.11601 2.491H8.14301V0.5H3.11601C0.938006 0.5 0.112006 2.31 0.0870056 3.527V14.473C0.112006 15.689 0.938006 17.5 3.11601 17.5H8.14301V15.51H3.11601C2.27701 15.51 2.12401 14.827 2.10601 14.452Z"
+                fill="currentColor" />
             </svg>
           </a>
         </div>
@@ -99,8 +102,10 @@
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0" aria-valuemax="30000.0" aria-valuemin="0.0" aria-valuenow="0.0" aria-label="Минимальная стоимость 0 рублей" role="slider"></div>
-                <div class="toggle toggle-max" tabindex="0" aria-valuemax="30000.0" aria-valuemin="0.0" aria-valuenow="0.0" aria-label="Максимальная стоимость 30000 рублей" role="slider"></div>
+                <div class="toggle toggle-min" tabindex="0" aria-valuemax="30000.0" aria-valuemin="0.0"
+                  aria-valuenow="0.0" aria-label="Минимальная стоимость 0 рублей" role="slider"></div>
+                <div class="toggle toggle-max" tabindex="0" aria-valuemax="30000.0" aria-valuemin="0.0"
+                  aria-valuenow="0.0" aria-label="Максимальная стоимость 30000 рублей" role="slider"></div>
               </div>
               <div class="price-controls">
                 <label class="min-price" aria-label="Минимальная стоимость 0 рублей">
